@@ -1,0 +1,19 @@
+.button {
+  padding: 15px 30px;
+  text-transform: uppercase;
+  border: 2px solid var(--color-second);
+  color: var(--color-second);
+  font-size: var(--font-size-s);  
+  line-height: var(--font-line-s);
+  background-color: transparent;
+  transition: all 0.3s;
+  cursor: pointer;
+  display: block;
+
+  &:hover {
+    transition: all 0.3s;
+    background-color: #101010;
+    border-color: rgb(202, 202, 202);
+    color: rgb(202, 202, 202);
+  }
+}

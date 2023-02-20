@@ -1,0 +1,122 @@
+@import "../../index.scss";
+
+.promo {
+
+  &_title {
+    font-family: var(--font-family-second);
+    font-weight: var(--font-width-400);
+    font-size: 53px;
+    line-height: 69px;
+    max-width: 750px;
+
+    @include _830 {
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+    }
+
+    &_br {
+      display: block;
+      margin-top: 20px;
+    }
+  }
+
+  &_subtitle {
+    margin-top: 80px;
+    font-size: var(--font-size-m);
+    line-height: var(--font-line-m);
+    font-weight: var(--font-width-3);
+    margin-bottom: 24px;
+    max-width: 950px;
+
+    @include _830 {
+      margin-top: 40px;
+      font-size: var(--font-size-s);
+      line-height: var(--font-line-s);
+      text-align: center;
+    }
+  }
+
+  &_info {
+    font-size: var(--font-size-s);
+    line-height: var(--font-line-s);
+    font-weight: var(--font-width-2);
+    margin-bottom: 152px;
+
+    @include _830 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+
+  &_block_btn {
+
+    @include _830 {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &_bg {
+    position: relative;
+    padding-top: 190px;
+    padding-bottom: 189px;
+
+    @include _1100 {
+      padding-top: 70px;
+      padding-bottom: 190px;
+    }
+
+    @include _830 {
+      padding-top: 50px;
+      padding-bottom: 40px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: inherit;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background: rgb(3, 0, 51);
+      background: linear-gradient(90deg, rgba(4, 0, 42, 0.9) 12%, rgba(9, 9, 121, 0) 83%, rgba(0, 212, 255, 0) 95%);
+      filter: blur(122px);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 686px;
+      height: 900px;
+      right: 150px;
+      bottom: 0;
+      z-index: -2;
+      background: url(../../assets/promo-img.png) no-repeat right bottom;
+
+      @include _1100 {
+        transform: scale(0.9);
+      }
+
+      @include _830 {
+        background: none;
+      }
+    }
+  }
+
+  &_under_img {
+    position: absolute;
+    bottom: -55px;
+    right: 0;
+    width: 100%;
+    height: 180px;
+    background: rgb(121, 9, 9);
+    background: linear-gradient(90deg, rgba(121,9,9,0) 0%, rgba(0,212,255,0) 2%, rgba(6,6,6,1) 47%);
+    filter: blur(42px);
+    @include _830 {
+      background: none;
+    }
+  }
+}

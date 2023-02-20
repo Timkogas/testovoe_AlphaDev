@@ -1,0 +1,35 @@
+@import "../../../index.scss";
+
+.logo {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  text-align: left;
+
+  &_footer {
+    margin-right: 75px;
+
+    @include _1100 {
+      margin-right: 0;
+    }
+  }
+
+  &_text {
+    font-family: var(--font-family-second);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    &_first {
+      font-weight: var(--font-width-4);
+      font-size: 26px;
+      line-height: 34px;
+    }
+
+    &_second {
+      font-weight: var(--font-width-4);
+      font-size: var(--font-size-s);
+      line-height: var(--font-line-s)
+    }
+  }
+}

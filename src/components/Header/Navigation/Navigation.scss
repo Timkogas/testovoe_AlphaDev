@@ -1,0 +1,41 @@
+@import "../../../index.scss";
+
+.navigation {
+  display: flex;
+  gap: 40px;
+  @include _830 {
+    gap: 10px;
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+.navigation_link {
+  text-transform: uppercase;
+  font-weight: var(--font-width-2);
+  font-size: var(--font-size-s);
+  line-height: var(--font-line-s);
+  transition: all 0.3s;
+  position: relative;
+
+  &::after {
+    content: '';
+    width: 100%;
+    background-color: #534878;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    position: absolute;
+    transition: all 0.3s;
+    opacity: 0;
+  }
+
+  &:hover {
+    opacity: 0.8;
+    transition: all 0.3s;
+    &::after {
+      opacity: 1;
+      transition: all 0.3s;
+    }
+  }
+}

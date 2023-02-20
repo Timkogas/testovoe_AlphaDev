@@ -1,0 +1,24 @@
+@import "../../../index.scss";
+
+.footer_menu {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  &_link {
+    text-transform: uppercase;
+    transition: all 0.3s;
+    font-weight: var(--font-width-2);
+    font-size: var(--font-size-s);
+    line-height: var(--font-line-s);
+
+    &:hover {
+      opacity: 0.8;
+      transition: all 0.3s;
+    }
+  }
+
+  @include _830 {
+    gap: 10px;
+  }
+}

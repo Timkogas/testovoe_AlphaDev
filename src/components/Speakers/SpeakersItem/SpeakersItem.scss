@@ -1,0 +1,60 @@
+@import "../../../index.scss";
+
+.speaker_item {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  gap: 10px;
+
+  @include _830 {
+    width: 280px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    gap: 8px;
+  }
+
+  &_img {
+    width: 330px;
+    height: 435px;
+    object-fit: cover;
+    margin-bottom: 35px;
+
+    @include _830 {
+      width: 280px;
+      height: 335px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &_name {
+    font-size: var(--font-size-m);
+    line-height: var(--font-line-m);
+    font-weight: var(--font-width-3);
+  }
+
+  &_info {
+    font-size: var(--font-size-s);
+    line-height: var(--font-line-s);
+    font-weight: var(--font-width-2);
+  }
+
+  &_more {
+    font-size: var(--font-size-s);
+    line-height: var(--font-line-s);
+    font-weight: var(--font-width-2);
+    color: var(--main-color);
+    opacity: 0.5;
+    width: 100px;
+    text-decoration: underline;
+  }
+
+  &_hr {
+    width: 243px;
+    height: 3px;
+    background: #534878;
+    ;
+  }
+
+}

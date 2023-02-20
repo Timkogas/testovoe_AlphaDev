@@ -1,0 +1,12 @@
+.logo_social {
+  border: 3px solid #534878;
+  width: 36px;
+  height: 36px;
+  padding: 3px;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    transition: all 0.3s;
+    opacity: 0.8;
+  }
+}

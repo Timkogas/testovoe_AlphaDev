@@ -1,0 +1,10 @@
+.footer_menu_info_link {
+  font-weight: var(--font-width-2);
+  font-size: var(--font-size-s);
+  line-height: var(--font-line-s);
+  transition: all 0.3s;
+  &:hover {
+    opacity: 0.8;
+    transition: all 0.3s;
+  }
+}

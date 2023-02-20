@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: auto;
+  box-sizing: border-box;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+body {
+  background-color: #060606;
+  color: #C2BCD2;
+  --font-family-main: 'JetBrains Mono', monospace;
+  --font-family-second: 'IBM Plex Mono', monospace;
+  --color-main: #C2BCD2;
+  --color-second: white;
+  --font-width-2: 200;
+  --font-width-3: 300;
+  --font-width-4: 400;
+  --font-width-5: 500;
+  --font-size-s: 16px;
+  --font-line-s: 21px;
+  --font-size-m: 20px;
+  --font-line-m: 26px;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+@mixin _1100 {
+  @media (max-width: 1100px) {
+    @content;
+  }
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+
+  @include _1100 {
+    max-width: auto;
+    padding: 0 15px;
+    margin: 0;
+  }
+}
+
+
+@mixin _830 {
+  @media (max-width: 830px) {
+    @content;
+  }
+}
