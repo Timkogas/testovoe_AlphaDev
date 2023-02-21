@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/testovoe_AlphaDev/static/css/main.8fa7c04c.css",
-    "main.js": "/testovoe_AlphaDev/static/js/main.636ee459.js",
+    "main.js": "/testovoe_AlphaDev/static/js/main.d01da7d0.js",
     "static/media/promo-img.png": "/testovoe_AlphaDev/static/media/promo-img.2a67f7c215a0a4e32fb1.png",
     "static/media/inst-logo.svg": "/testovoe_AlphaDev/static/media/inst-logo.5924db1ae6ec313a902c50921b48ed4b.svg",
     "static/media/logo.svg": "/testovoe_AlphaDev/static/media/logo.8016dd07834fd49ccf10497178e1a598.svg",
@@ -10,10 +10,10 @@
     "static/media/tg-logo.svg": "/testovoe_AlphaDev/static/media/tg-logo.29aacab271de578ff0b2d5e6221935e8.svg",
     "static/media/fc-logo.svg": "/testovoe_AlphaDev/static/media/fc-logo.6f9593a12a1072aa431aab240a419063.svg",
     "main.8fa7c04c.css.map": "/testovoe_AlphaDev/static/css/main.8fa7c04c.css.map",
-    "main.636ee459.js.map": "/testovoe_AlphaDev/static/js/main.636ee459.js.map"
+    "main.d01da7d0.js.map": "/testovoe_AlphaDev/static/js/main.d01da7d0.js.map"
   },
   "entrypoints": [
     "static/css/main.8fa7c04c.css",
-    "static/js/main.636ee459.js"
+    "static/js/main.d01da7d0.js"
   ]
 }
